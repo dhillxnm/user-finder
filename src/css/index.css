@@ -1,0 +1,110 @@
+/* src/styles/App.css */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  font-size: 73px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px 57px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 26px;
+  outline: none;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.followers-info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+p, h2 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 36%;
+  border-radius: 50%;
+  margin-top: 70%;
+}
+
+.img {
+  margin-top: 251%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.repo-header {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 43px;
+  margin-bottom: 30px;
+}
+
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 146%;
+}
+
+.description {
+  text-align: left;
+}
+
+.last-updated {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+}
+
+.repo-list {
+    position: relative;
+    right: 88px;
+}
+
+.github-link {
+    text-decoration: none;
+    background-color: #7A01FF;
+    border-radius: 21px;
+    padding: 9px;
+    position: relative;
+    left: 175px;
+    color: #fff;
+}
