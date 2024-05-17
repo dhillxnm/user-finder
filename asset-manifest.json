@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/user-finder/static/css/main.844d08a8.css",
+    "main.js": "/user-finder/static/js/main.038bb772.js",
+    "index.html": "/user-finder/index.html",
+    "main.844d08a8.css.map": "/user-finder/static/css/main.844d08a8.css.map",
+    "main.038bb772.js.map": "/user-finder/static/js/main.038bb772.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.844d08a8.css",
+    "static/js/main.038bb772.js"
+  ]
+}
