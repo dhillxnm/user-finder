@@ -10,7 +10,7 @@ const User = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const token = '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';
+        const token = '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';
         const options = { headers: { Authorization: `Bearer ${token}` } };
         const [userResponse, reposResponse] = await Promise.all([
           axios.get(`https://api.github.com/users/${username}`, options),
