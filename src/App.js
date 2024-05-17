@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Search from './component/Search';
 import User from './component/User';
@@ -7,7 +8,7 @@ import './css/index.css';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="app">
         <AnimatePresence mode="wait">
           <Routes>
@@ -16,7 +17,7 @@ const App = () => {
           </Routes>
         </AnimatePresence>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
