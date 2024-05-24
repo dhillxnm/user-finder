@@ -1,17 +1,42 @@
-/* src/styles/App.css */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  scrollbar-width: none;
+}
+
+
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
+
+
+.app > * {
+  transition: all 0.3s ease-in-out;
+}
+
+
+p, h2 {
+  text-align: center;
+}
+
+
+h2 
+{
+  margin-top: 24px;
+}
+
+/*----search page----*/
+
 
 .search-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
+
 
 .input-group {
   display: flex;
@@ -19,23 +44,25 @@
   margin-bottom: 20px;
 }
 
+
 .input-icon {
-  font-size: 73px;
-  margin-bottom: 20px;
+  font-size: 108px;
+    margin-bottom: -2px;
 }
 
+
 input[type="text"] {
-  padding: 10px 57px;
+  padding: 5px 31px;
   font-size: 20px;
   border: 1px solid #ccc;
   border-radius: 26px;
   outline: none;
   text-align: center;
+  position: relative;
+  top: 3.8px;
+  right: -0.5px;
 }
 
-input[type="text"]:focus {
-  border-color: #007bff;
-}
 
 .followers-info {
   display: flex;
@@ -44,29 +71,29 @@ input[type="text"]:focus {
   margin-bottom: 17px;
 }
 
-p, h2 {
-  text-align: center;
-}
 
 img {
   display: block;
   max-width: 36%;
   border-radius: 50%;
-  margin-top: 70%;
+  margin-top: 80px;
 }
 
+
 .img {
-  margin-top: 251%;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
+
 .projects {
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
+  color: #6B308B;
 }
+
 
 .repo-header {
   font-size: 24px;
@@ -75,18 +102,21 @@ img {
   margin-bottom: 30px;
 }
 
+
 li {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 7px;
   margin-bottom: 20px;
   position: relative;
-  width: 146%;
+  width: 100%;
 }
+
 
 .description {
   text-align: left;
 }
+
 
 .last-updated {
     position: absolute;
@@ -94,17 +124,53 @@ li {
     right: 14px;
 }
 
-.repo-list {
-    position: relative;
-    right: 88px;
-}
 
 .github-link {
     text-decoration: none;
-    background-color: #7A01FF;
+    background-color: #6B308B;
     border-radius: 21px;
     padding: 9px;
-    position: relative;
-    left: 175px;
     color: #fff;
 }
+
+
+.user-container {
+width: 750px;
+}
+
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+
+.text-border {
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+  width: 324px;
+  height: 50px;
+  background: linear-gradient(
+    60deg, 
+    #6e5494, 
+    #1b1f23, 
+    #2ea043,
+    #0075ca,
+    #6e5494   
+  );
+  background-size: 500% 100%; /* Adjusted background size */
+  border-radius: 200px;
+  animation: spin 25s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 0%; /* Adjusted background position */
+  }
+}
+
